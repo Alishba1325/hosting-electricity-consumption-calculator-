@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Consumption Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Project</a></li>
+            <li><a href="mailto:group@project.com">Email Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Electricity Consumption Calculator</h1>
+        <form id="consumptionForm" class="animate__animated animate__fadeIn">
+            <div class="form-group">
+                <label for="appliance">Appliance Name:</label>
+                <input type="text" id="appliance" placeholder="e.g. Air Conditioner" required>
+            </div>
+            <div class="form-group">
+                <label for="power">Power Rating (in watts):</label>
+                <input type="number" id="power" placeholder="e.g. 1000" required>
+            </div>
+            <div class="form-group">
+                <label for="hours">Hours Used Per Day:</label>
+                <input type="number" id="hours" placeholder="e.g. 5" required>
+            </div>
+            <div class="form-group">
+                <label for="days">Days Used Per Month:</label>
+                <input type="number" id="days" placeholder="e.g. 30" required>
+            </div>
+            <button type="submit">Calculate Consumption</button>
+        </form>
+        <div class="result animate__animated animate__fadeIn">
+            <h2>Estimated Monthly Consumption</h2>
+            <p id="consumptionOutput">0 kWh</p>
+        </div>
+    </div>
+
+    <footer id="about">
+        <p><strong>About the Project:</strong> This calculator helps users estimate the electricity consumption of their appliances based on power rating, usage hours, and days used. Developed by:</p>
+        <ul>
+            <li>Group Leader: Alishba Jawaid</li>
+            <li>Group Members: Ayesha Sidiqqa, Areeba Wahid</li>
+        </ul>
+    </footer>
+
+    <footer id="contact">
+        <p><strong>Contact Us:</strong> Reach us via email at <a href="mailto:group@project.com">group@project.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
